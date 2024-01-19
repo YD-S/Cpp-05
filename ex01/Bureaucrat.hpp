@@ -7,6 +7,9 @@
 #include <iostream>
 #include <string>
 #include <exception>
+#include "Form.hpp"
+
+class Form;
 
 class Bureaucrat {
 private:
@@ -18,6 +21,8 @@ public:
 	Bureaucrat(Bureaucrat const &copy);
 	Bureaucrat &operator=(Bureaucrat const &rhs);
 	~Bureaucrat();
+
+	void signForm(Form &form);
 
 	std::string const &getName() const;
 	int getGrade() const;
