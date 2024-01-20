@@ -8,8 +8,8 @@
 
 int main(){
 	Intern someRandomIntern;
-	AForm* rrf;
-	rrf = someRandomIntern.makeForm("presidential pardon", "Bender");
+	AForm* rf;
+	rf = someRandomIntern.makeForm("presidential pardon", "Bender");
 
-	delete rrf;
+	delete rf;
 }

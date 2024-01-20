@@ -12,15 +12,15 @@ int main(){
 try
 	{
 		ShrubberyCreationForm home("home");
-		Bureaucrat me("me", 1);
-		Bureaucrat meno("meno", 149);
-		RobotomyRequestForm yoo("yoo");
-		PresidentialPardonForm noo("noo");
+		Bureaucrat b1("yes", 1);
+		Bureaucrat b2("no", 149);
+		RobotomyRequestForm r1("yoo");
+		PresidentialPardonForm p1("noo");
 
-		me.signForm(yoo);
-		me.executeForm(yoo);
+		b1.signForm(r1);
+		b1.executeForm(r1);
 
-		meno.signForm(noo);
+		b2.signForm(p1);
 	}
 	catch(const std::exception& ex)
 	{

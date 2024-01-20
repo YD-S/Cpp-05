@@ -5,8 +5,8 @@
 #include "Form.hpp"
 
 int main(){
-	Form foorm("foooorm");
-	std::cout << foorm;
+	Form form("Form1");
+	std::cout << form;
 
 
 	Bureaucrat john("John", 5);
@@ -16,9 +16,9 @@ int main(){
 
 	try
 	{
-		john.signForm(foorm);
-		jaaax.signForm(foorm);
-		foorm.beSigned(john);
+		john.signForm(form);
+		jaaax.signForm(form);
+		form.beSigned(john);
 	}
 	catch(std::exception& ex)
 	{
